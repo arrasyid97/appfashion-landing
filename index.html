@@ -277,49 +277,99 @@
     </div>
 </section>
 
-<section id="harga" class="section pricing">
+<section id="harga" class="section pricing premium-pricing">
     <div class="section-title white">
-        <span>Paket Harga</span>
-        <h2>Mulai rapikan bisnis fashion Anda.</h2>
-        <p>Harga bisa disesuaikan saat peluncuran resmi.</p>
+        <span>Harga Perkenalan</span>
+        <h2>Aktifkan Fashion OS dengan harga spesial pengguna baru.</h2>
+        <p>
+            Gunakan seluruh fitur Fashion OS untuk merapikan stok, produksi, penjualan, retur,
+            audit dana marketplace, dan ROAS iklan dalam satu sistem.
+        </p>
+    </div>
+
+    <div class="promo-timer-box">
+        <div>
+            <p class="promo-label">🔥 Promo Pengguna Baru</p>
+            <h3>Harga spesial hanya berlaku dalam waktu terbatas.</h3>
+            <p>Setelah waktu promo berakhir, aktivasi mengikuti harga normal.</p>
+        </div>
+
+        <div class="countdown">
+            <div><strong id="days">03</strong><span>Hari</span></div>
+            <div><strong id="hours">00</strong><span>Jam</span></div>
+            <div><strong id="minutes">00</strong><span>Menit</span></div>
+            <div><strong id="seconds">00</strong><span>Detik</span></div>
+        </div>
     </div>
 
     <div class="pricing-grid">
         <div class="price-card">
-            <h3>Starter</h3>
-            <p class="price">Rp 99.000<span>/bulan</span></p>
+            <p class="plan-badge">Aktivasi 30 Hari</p>
+            <h3>Mulai Rapikan Operasional</h3>
+
+            <p class="old-price">Rp 350.000</p>
+            <p class="price">Rp 250.000<span>/30 hari</span></p>
+
             <ul>
-                <li>Produk & stok</li>
+                <li>Akses semua fitur Fashion OS</li>
+                <li>Produk, SKU, warna & ukuran</li>
                 <li>Harga & HPP</li>
                 <li>Kasir POS</li>
-                <li>Laporan dasar</li>
+                <li>Proses massal pesanan</li>
+                <li>Audit pencairan dana</li>
+                <li>Manajemen retur</li>
+                <li>Dashboard ROAS</li>
+                <li>Update berkala</li>
             </ul>
-            <a href="https://appfashion.id">Coba Starter</a>
+
+            <a href="https://appfashion.id">Aktifkan 30 Hari</a>
         </div>
 
         <div class="price-card highlight">
-            <h3>Pro</h3>
-            <p class="price">Rp 199.000<span>/bulan</span></p>
+            <p class="plan-badge hot">⭐ Paling Hemat</p>
+            <h3>Aktivasi 1 Tahun</h3>
+
+            <p class="old-price">Rp 4.200.000</p>
+            <p class="price">Rp 2.500.000<span>/tahun</span></p>
+
+            <div class="saving-box">
+                Hemat Rp 1.700.000 dibanding harga normal.
+            </div>
+
             <ul>
-                <li>Semua fitur Starter</li>
-                <li>Produksi & stok kain</li>
-                <li>Proses massal</li>
-                <li>Audit pencairan dana</li>
-                <li>Dashboard ROAS</li>
+                <li>Akses semua fitur Fashion OS</li>
+                <li>Dashboard bisnis dan KPI owner</li>
+                <li>Produksi, maklun & stok kain</li>
+                <li>Audit dana marketplace</li>
+                <li>Dashboard ROAS iklan</li>
+                <li>Manajemen retur</li>
+                <li>Proses massal pesanan</li>
+                <li>Dukungan prioritas</li>
+                <li>Update fitur terbaru</li>
             </ul>
-            <a href="https://appfashion.id">Coba Pro</a>
+
+            <a href="https://appfashion.id">Pilih Aktivasi Tahunan</a>
         </div>
 
-        <div class="price-card">
-            <h3>Business</h3>
-            <p class="price">Custom</p>
+        <div class="price-card promo-code-card">
+            <p class="plan-badge">Kode Promo</p>
+            <h3>Punya kode khusus?</h3>
+            <p class="promo-desc">
+                Masukkan kode promo atau kode rujukan di aplikasi untuk membuka harga spesial jika tersedia.
+            </p>
+
+            <div class="fake-input">
+                MASUKKAN KODE PROMO
+                <button>Terapkan</button>
+            </div>
+
             <ul>
-                <li>Untuk tim lebih besar</li>
-                <li>Setup awal dibantu</li>
-                <li>Support prioritas</li>
-                <li>Konsultasi sistem</li>
+                <li>Cocok untuk kode referral</li>
+                <li>Bisa dipakai untuk promo terbatas</li>
+                <li>Harga akan otomatis menyesuaikan</li>
             </ul>
-            <a href="https://wa.me/6285691803476?text=Halo%20saya%20ingin%20tanya%20paket%20Business%20Fashion%20OS">Hubungi Kami</a>
+
+            <a href="https://appfashion.id">Masuk ke Aplikasi</a>
         </div>
     </div>
 </section>
@@ -371,6 +421,25 @@
     <small>© 2026 Fashion OS. All rights reserved.</small>
 </footer>
 
+<script>
+    const promoEndDate = new Date();
+    promoEndDate.setDate(promoEndDate.getDate() + 3);
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = promoEndDate.getTime() - now;
+
+        if (distance <= 0) return;
+
+        document.getElementById('days').textContent = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+        document.getElementById('hours').textContent = String(Math.floor((distance / (1000 * 60 * 60)) % 24)).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(Math.floor((distance / (1000 * 60)) % 60)).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(Math.floor((distance / 1000) % 60)).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+</script>
 <script>
     const accordionItems = document.querySelectorAll('.accordion-item');
 
