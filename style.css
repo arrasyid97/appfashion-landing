@@ -136,6 +136,51 @@ nav a {
     color: #64748b !important;
 }
 
+.pain-list {
+    margin-top: 24px;
+    display: grid;
+    gap: 10px;
+}
+
+.pain-list div {
+    background: rgba(255,255,255,0.75);
+    border: 1px solid #e0e7ff;
+    color: #334155;
+    padding: 12px 14px;
+    border-radius: 14px;
+    font-weight: 800;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.loss-box {
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(248, 113, 113, 0.25);
+    border-radius: 22px;
+    padding: 20px;
+    margin-bottom: 18px;
+}
+
+.loss-box p {
+    color: #fecaca;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.loss-box ul {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+}
+
+.loss-box li {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.loss-box li::before {
+    content: "⚠ ";
+}
+
 .hero-preview {
     background: #0f172a;
     color: #ffffff;
