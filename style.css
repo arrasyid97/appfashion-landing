@@ -1131,3 +1131,167 @@ footer strong {
         align-items: stretch;
     }
 }
+
+.conviction-section {
+    background:
+        radial-gradient(circle at top right, rgba(79, 70, 229, 0.08), transparent 30%),
+        #f8fafc;
+}
+
+.conviction-grid {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.conviction-card {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.06);
+}
+
+.conviction-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.conviction-card.danger .conviction-icon {
+    background: #fee2e2;
+}
+
+.conviction-card.warning .conviction-icon {
+    background: #fef3c7;
+}
+
+.conviction-card.success .conviction-icon {
+    background: #dcfce7;
+}
+
+.conviction-card h3 {
+    font-size: 22px;
+    line-height: 1.25;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.conviction-card p {
+    color: #475569;
+    line-height: 1.75;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.conviction-card ul {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+.conviction-card li {
+    color: #334155;
+    line-height: 1.55;
+    font-size: 14px;
+    font-weight: 750;
+    position: relative;
+    padding-left: 24px;
+}
+
+.conviction-card li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 1000;
+}
+
+.conviction-card.danger li::before {
+    content: "×";
+    color: #dc2626;
+}
+
+.conviction-card.warning li::before {
+    content: "!";
+    color: #d97706;
+}
+
+.conviction-card.success li::before {
+    content: "✓";
+    color: #059669;
+}
+
+.owner-message {
+    max-width: 1120px;
+    margin: 28px auto 0;
+    background: linear-gradient(135deg, #0f172a, #312e81);
+    border-radius: 30px;
+    padding: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    box-shadow: 0 30px 80px rgba(15, 23, 42, 0.22);
+}
+
+.owner-message span {
+    display: inline-flex;
+    background: rgba(255, 255, 255, 0.12);
+    color: #c7d2fe;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.owner-message h3 {
+    color: white;
+    font-size: 30px;
+    line-height: 1.18;
+    margin-bottom: 12px;
+}
+
+.owner-message p {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.owner-message a {
+    flex-shrink: 0;
+    background: #ffffff;
+    color: #312e81;
+    text-decoration: none;
+    font-weight: 1000;
+    padding: 16px 20px;
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 950px) {
+    .conviction-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .owner-message {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .owner-message h3 {
+        font-size: 25px;
+    }
+
+    .owner-message a {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+}
