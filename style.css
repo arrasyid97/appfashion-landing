@@ -575,3 +575,63 @@ footer strong {
         flex-direction: column;
     }
 }
+
+.why-fashionos {
+    background: #ffffff;
+}
+
+.accordion-wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    display: grid;
+    gap: 14px;
+}
+
+.accordion-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    background: #f8fafc;
+    overflow: hidden;
+}
+
+.accordion-btn {
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 20px 22px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    font-size: 17px;
+    font-weight: 900;
+    color: #0f172a;
+}
+
+.accordion-btn span {
+    font-size: 22px;
+    color: #4f46e5;
+}
+
+.accordion-content {
+    display: none;
+    padding: 0 22px 22px;
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+.accordion-content ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.accordion-content li {
+    margin-bottom: 6px;
+}

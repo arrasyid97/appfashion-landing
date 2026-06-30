@@ -113,6 +113,110 @@
     </div>
 </section>
 
+<section class="section why-fashionos">
+    <div class="section-title">
+        <span>Kenapa Fashion OS?</span>
+        <h2>Bukan sekadar aplikasi stok. Fashion OS dibuat untuk alur kerja seller fashion.</h2>
+        <p>
+            Dari produk, stok, produksi, pesanan, retur, pencairan dana, sampai ROAS iklan — semua dibuat agar owner lebih mudah membaca kondisi bisnis.
+        </p>
+    </div>
+
+    <div class="accordion-wrap">
+
+        <div class="accordion-item active">
+            <button class="accordion-btn" type="button">
+                Kenapa seller fashion perlu pakai Fashion OS?
+                <span>−</span>
+            </button>
+            <div class="accordion-content">
+                Banyak seller fashion bukan hanya jual produk, tapi juga mengelola warna, ukuran, stok, produksi, maklun, retur, iklan, dan pencairan marketplace. Kalau semua dicatat terpisah di Excel, data mudah berantakan. Fashion OS membantu menyatukan data penting itu dalam satu sistem.
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-btn" type="button">
+                Apa keunggulan Fashion OS dibanding catatan manual?
+                <span>+</span>
+            </button>
+            <div class="accordion-content">
+                Fashion OS membantu owner melihat data lebih cepat dan rapi:
+                <ul>
+                    <li>stok produk lebih mudah dipantau</li>
+                    <li>HPP dan harga jual lebih jelas</li>
+                    <li>proses pesanan lebih tertata</li>
+                    <li>retur dan batal pesanan tercatat</li>
+                    <li>dana marketplace yang belum cair bisa diaudit</li>
+                    <li>ROAS iklan bisa dilihat per model produk</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-btn" type="button">
+                Fashion OS bisa dipakai untuk penjual di mana saja?
+                <span>+</span>
+            </button>
+            <div class="accordion-content">
+                Bisa dipakai untuk seller yang jualan di Shopee, TikTok Shop, offline store, reseller, butik, atau channel penjualan lain. Fashion OS membantu memisahkan data per channel agar laporan lebih mudah dibaca.
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-btn" type="button">
+                Apakah cocok untuk produksi rumahan, maklun, dan garmen kecil?
+                <span>+</span>
+            </button>
+            <div class="accordion-content">
+                Ya. Fashion OS cocok untuk bisnis fashion yang punya proses produksi sendiri, maklun, atau produksi rumahan. Sistemnya bisa membantu mencatat model produk, stok kain, batch produksi, biaya produksi, hasil jadi, dan produk siap jual.
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-btn" type="button">
+                Apa saja yang ada di Fashion OS?
+                <span>+</span>
+            </button>
+            <div class="accordion-content">
+                Fashion OS memiliki fitur utama seperti:
+                <ul>
+                    <li>manajemen produk, SKU, warna, dan ukuran</li>
+                    <li>harga jual dan HPP</li>
+                    <li>stok produk</li>
+                    <li>produksi dan stok kain</li>
+                    <li>kasir POS</li>
+                    <li>proses massal pesanan</li>
+                    <li>audit pencairan dana marketplace</li>
+                    <li>manajemen retur</li>
+                    <li>dashboard ROAS iklan</li>
+                    <li>laporan keuangan dan KPI bisnis</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-btn" type="button">
+                Apakah Fashion OS mudah dipakai pemula?
+                <span>+</span>
+            </button>
+            <div class="accordion-content">
+                Ya. Fashion OS dibuat agar bisa dipakai bertahap. Pengguna tidak harus langsung memakai semua fitur. Bisa mulai dari data produk, stok, harga HPP, lalu lanjut ke pesanan, retur, pencairan dana, dan ROAS.
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-btn" type="button">
+                Apakah harus langsung input semua data?
+                <span>+</span>
+            </button>
+            <div class="accordion-content">
+                Tidak. Pengguna bisa mulai dari data yang paling penting dulu, seperti produk, SKU, harga jual, dan HPP. Setelah itu baru lanjut ke stok, produksi, transaksi, retur, dan laporan.
+            </div>
+        </div>
+
+    </div>
+</section>
+
 <section id="fitur" class="section features">
     <div class="section-title">
         <span>Fitur Utama</span>
@@ -266,6 +370,29 @@
     <p>Aplikasi operasional untuk seller fashion.</p>
     <small>© 2026 Fashion OS. All rights reserved.</small>
 </footer>
+
+<script>
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(item => {
+        const button = item.querySelector('.accordion-btn');
+        const icon = button.querySelector('span');
+
+        button.addEventListener('click', () => {
+            accordionItems.forEach(otherItem => {
+                const otherIcon = otherItem.querySelector('.accordion-btn span');
+
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                    otherIcon.textContent = '+';
+                }
+            });
+
+            item.classList.toggle('active');
+            icon.textContent = item.classList.contains('active') ? '−' : '+';
+        });
+    });
+</script>
 
 </body>
 </html>
