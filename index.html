@@ -14,7 +14,7 @@
     <nav>
         <a href="#masalah">Masalah</a>
         <a href="#fitur">Fitur</a>
-        <a href="#harga">Harga</a>
+        <a href="#harga">Trial Gratis</a>
         <a href="#faq">FAQ</a>
         <a class="nav-login" href="https://appfashion.id">Masuk Aplikasi</a>
     </nav>
@@ -277,99 +277,133 @@
     </div>
 </section>
 
-<section id="harga" class="section pricing premium-pricing">
+<section id="harga" class="section trial-offer">
     <div class="section-title white">
-        <span>Harga Perkenalan</span>
-        <h2>Aktifkan Fashion OS dengan harga spesial pengguna baru.</h2>
+        <span>Free Trial Pengguna Baru</span>
+        <h2>Coba Fashion OS 3 Hari Gratis. Tanpa biaya di awal.</h2>
         <p>
-            Gunakan seluruh fitur Fashion OS untuk merapikan stok, produksi, penjualan, retur,
-            audit dana marketplace, dan ROAS iklan dalam satu sistem.
+            Masuk ke aplikasi, lihat semua fitur, pelajari alurnya, dan rasakan sendiri apakah Fashion OS cocok
+            untuk merapikan bisnis fashion Anda sebelum melanjutkan penggunaan.
         </p>
     </div>
 
-    <div class="promo-timer-box">
-        <div>
-            <p class="promo-label">🔥 Promo Pengguna Baru</p>
-            <h3>Harga spesial hanya berlaku dalam waktu terbatas.</h3>
-            <p>Setelah waktu promo berakhir, aktivasi mengikuti harga normal.</p>
+    <div class="trial-grid">
+        <div class="trial-main-card">
+            <div class="trial-badge">Rp0 untuk pengguna baru</div>
+
+            <h3>Jelajahi semua fitur lengkap selama 3 hari.</h3>
+
+            <p class="trial-desc">
+                Tidak perlu langsung membeli. Gunakan masa percobaan untuk melihat bagaimana Fashion OS membantu
+                mengelola stok, produksi, maklun, pesanan, retur, audit pencairan dana, hingga ROAS iklan.
+            </p>
+
+            <div class="zero-price">
+                <span>Rp</span>0
+                <small>/ 3 hari pertama</small>
+            </div>
+
+            <ul class="trial-checks">
+                <li>Akses fitur produk, SKU, warna, dan ukuran</li>
+                <li>Lihat alur stok, gudang, dan stok alokasi</li>
+                <li>Coba fitur produksi, maklun, dan stok kain</li>
+                <li>Pelajari proses pesanan massal</li>
+                <li>Cek fitur retur dan audit dana marketplace</li>
+                <li>Lihat dashboard ROAS dan laporan owner</li>
+            </ul>
+
+            <div class="trial-actions">
+                <a class="trial-primary" href="https://appfashion.id">Mulai Free Trial 3 Hari</a>
+                <a class="trial-secondary" href="https://wa.me/6285691803476?text=Halo%20admin%20Fashion%20OS%2C%20saya%20ingin%20konsultasi%20dan%20dibantu%20memahami%20fitur%20Fashion%20OS">Konsultasi WhatsApp</a>
+            </div>
+
+            <p class="trial-small-note">
+                Admin siap membantu menjelaskan fitur dan alur penggunaan jika ada yang ingin ditanyakan.
+            </p>
         </div>
 
-        <div class="countdown">
-            <div><strong id="days">03</strong><span>Hari</span></div>
-            <div><strong id="hours">00</strong><span>Jam</span></div>
-            <div><strong id="minutes">00</strong><span>Menit</span></div>
-            <div><strong id="seconds">00</strong><span>Detik</span></div>
+        <div class="coupon-card" id="couponCard">
+            <div class="coupon-header">
+                <span>Bonus Pengguna Baru</span>
+                <strong>Kode diskon setelah trial</strong>
+            </div>
+
+            <h3>Klaim kode diskon besar sebelum waktunya habis.</h3>
+
+            <p class="coupon-desc">
+                Setelah masa trial selesai dan Anda merasa Fashion OS cocok untuk bisnis Anda, gunakan kode ini
+                untuk melanjutkan penggunaan dengan harga spesial.
+            </p>
+
+            <div class="trial-countdown">
+                <div>
+                    <strong id="days">03</strong>
+                    <span>Hari</span>
+                </div>
+                <div>
+                    <strong id="hours">00</strong>
+                    <span>Jam</span>
+                </div>
+                <div>
+                    <strong id="minutes">00</strong>
+                    <span>Menit</span>
+                </div>
+                <div>
+                    <strong id="seconds">00</strong>
+                    <span>Detik</span>
+                </div>
+            </div>
+
+            <div id="couponAvailable">
+                <p class="coupon-warning">
+                    Kode hanya tampil selama 3 hari sejak Anda membuka halaman ini. Salin sekarang agar tidak terlewat.
+                </p>
+
+                <button id="claimDiscountBtn" type="button" class="claim-btn">
+                    Klaim Kode Diskon Lebih Besar
+                </button>
+
+                <div id="discountReveal" class="discount-reveal hidden">
+                    <p>Nama kode diskon Anda:</p>
+
+                    <div class="discount-code-row">
+                        <strong id="discountCodeText">Fashionku234</strong>
+                        <button id="copyDiscountBtn" type="button">Salin Kode</button>
+                    </div>
+
+                    <small id="copyFeedback">
+                        Gunakan kode ini setelah masa trial selesai jika Fashion OS cocok untuk bisnis Anda.
+                    </small>
+                </div>
+            </div>
+
+            <div id="couponExpired" class="coupon-expired hidden">
+                <strong>Waktu klaim kode sudah berakhir.</strong>
+                <p>
+                    Anda tetap bisa mencoba Fashion OS gratis 3 hari. Untuk bantuan promo atau konsultasi, hubungi admin.
+                </p>
+                <a href="https://wa.me/6285691803476?text=Halo%20admin%20Fashion%20OS%2C%20saya%20ingin%20bertanya%20tentang%20kode%20promo%20Fashion%20OS">Tanya Admin WhatsApp</a>
+            </div>
         </div>
     </div>
 
-    <div class="pricing-grid">
-        <div class="price-card">
-            <p class="plan-badge">Aktivasi 30 Hari</p>
-            <h3>Mulai Rapikan Operasional</h3>
-
-            <p class="old-price">Rp 350.000</p>
-            <p class="price">Rp 250.000<span>/30 hari</span></p>
-
-            <ul>
-                <li>Akses semua fitur Fashion OS</li>
-                <li>Produk, SKU, warna & ukuran</li>
-                <li>Harga & HPP</li>
-                <li>Kasir POS</li>
-                <li>Proses massal pesanan</li>
-                <li>Audit pencairan dana</li>
-                <li>Manajemen retur</li>
-                <li>Dashboard ROAS</li>
-                <li>Update berkala</li>
-            </ul>
-
-            <a href="https://appfashion.id">Aktifkan 30 Hari</a>
+    <div class="trial-steps">
+        <div>
+            <span>1</span>
+            <h4>Daftar Gratis</h4>
+            <p>Masuk ke aplikasi dan aktifkan masa percobaan 3 hari tanpa biaya.</p>
         </div>
 
-        <div class="price-card highlight">
-            <p class="plan-badge hot">⭐ Paling Hemat</p>
-            <h3>Aktivasi 1 Tahun</h3>
-
-            <p class="old-price">Rp 4.200.000</p>
-            <p class="price">Rp 2.500.000<span>/tahun</span></p>
-
-            <div class="saving-box">
-                Hemat Rp 1.700.000 dibanding harga normal.
-            </div>
-
-            <ul>
-                <li>Akses semua fitur Fashion OS</li>
-                <li>Dashboard bisnis dan KPI owner</li>
-                <li>Produksi, maklun & stok kain</li>
-                <li>Audit dana marketplace</li>
-                <li>Dashboard ROAS iklan</li>
-                <li>Manajemen retur</li>
-                <li>Proses massal pesanan</li>
-                <li>Dukungan prioritas</li>
-                <li>Update fitur terbaru</li>
-            </ul>
-
-            <a href="https://appfashion.id">Pilih Aktivasi Tahunan</a>
+        <div>
+            <span>2</span>
+            <h4>Lihat Semua Fitur</h4>
+            <p>Pelajari fitur stok, produksi, pesanan, retur, dana marketplace, dan ROAS.</p>
         </div>
 
-        <div class="price-card promo-code-card">
-            <p class="plan-badge">Kode Promo</p>
-            <h3>Punya kode khusus?</h3>
-            <p class="promo-desc">
-                Masukkan kode promo atau kode rujukan di aplikasi untuk membuka harga spesial jika tersedia.
-            </p>
-
-            <div class="fake-input">
-                MASUKKAN KODE PROMO
-                <button>Terapkan</button>
-            </div>
-
-            <ul>
-                <li>Cocok untuk kode referral</li>
-                <li>Bisa dipakai untuk promo terbatas</li>
-                <li>Harga akan otomatis menyesuaikan</li>
-            </ul>
-
-            <a href="https://appfashion.id">Masuk ke Aplikasi</a>
+        <div>
+            <span>3</span>
+            <h4>Lanjut Jika Cocok</h4>
+            <p>Jika sistemnya cocok, gunakan kode diskon yang sudah Anda salin.</p>
         </div>
     </div>
 </section>
@@ -422,23 +456,79 @@
 </footer>
 
 <script>
-    const promoEndDate = new Date();
-    promoEndDate.setDate(promoEndDate.getDate() + 3);
+    const offerStartKey = 'fashionos_coupon_start_v1';
+    const couponClaimedKey = 'fashionos_coupon_claimed_v1';
+    const discountCode = 'Fashionku234';
+    const offerDuration = 3 * 24 * 60 * 60 * 1000;
 
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const distance = promoEndDate.getTime() - now;
+    let offerStart = localStorage.getItem(offerStartKey);
 
-        if (distance <= 0) return;
-
-        document.getElementById('days').textContent = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
-        document.getElementById('hours').textContent = String(Math.floor((distance / (1000 * 60 * 60)) % 24)).padStart(2, '0');
-        document.getElementById('minutes').textContent = String(Math.floor((distance / (1000 * 60)) % 60)).padStart(2, '0');
-        document.getElementById('seconds').textContent = String(Math.floor((distance / 1000) % 60)).padStart(2, '0');
+    if (!offerStart) {
+        offerStart = Date.now().toString();
+        localStorage.setItem(offerStartKey, offerStart);
     }
 
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
+    const offerEnd = Number(offerStart) + offerDuration;
+
+    const daysEl = document.getElementById('days');
+    const hoursEl = document.getElementById('hours');
+    const minutesEl = document.getElementById('minutes');
+    const secondsEl = document.getElementById('seconds');
+
+    const couponAvailable = document.getElementById('couponAvailable');
+    const couponExpired = document.getElementById('couponExpired');
+    const discountReveal = document.getElementById('discountReveal');
+    const claimDiscountBtn = document.getElementById('claimDiscountBtn');
+    const copyDiscountBtn = document.getElementById('copyDiscountBtn');
+    const copyFeedback = document.getElementById('copyFeedback');
+
+    function updateTrialCountdown() {
+        const distance = offerEnd - Date.now();
+
+        if (distance <= 0) {
+            if (daysEl) daysEl.textContent = '00';
+            if (hoursEl) hoursEl.textContent = '00';
+            if (minutesEl) minutesEl.textContent = '00';
+            if (secondsEl) secondsEl.textContent = '00';
+
+            if (couponAvailable) couponAvailable.classList.add('hidden');
+            if (couponExpired) couponExpired.classList.remove('hidden');
+            return;
+        }
+
+        if (daysEl) daysEl.textContent = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+        if (hoursEl) hoursEl.textContent = String(Math.floor((distance / (1000 * 60 * 60)) % 24)).padStart(2, '0');
+        if (minutesEl) minutesEl.textContent = String(Math.floor((distance / (1000 * 60)) % 60)).padStart(2, '0');
+        if (secondsEl) secondsEl.textContent = String(Math.floor((distance / 1000) % 60)).padStart(2, '0');
+    }
+
+    if (localStorage.getItem(couponClaimedKey) === 'yes' && discountReveal && claimDiscountBtn) {
+        discountReveal.classList.remove('hidden');
+        claimDiscountBtn.textContent = 'Kode Diskon Sudah Diklaim';
+    }
+
+    if (claimDiscountBtn && discountReveal) {
+        claimDiscountBtn.addEventListener('click', () => {
+            discountReveal.classList.remove('hidden');
+            claimDiscountBtn.textContent = 'Kode Diskon Sudah Diklaim';
+            localStorage.setItem(couponClaimedKey, 'yes');
+        });
+    }
+
+    if (copyDiscountBtn) {
+        copyDiscountBtn.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(discountCode);
+                if (copyFeedback) copyFeedback.textContent = 'Kode berhasil disalin. Simpan dan gunakan setelah masa trial selesai.';
+                copyDiscountBtn.textContent = 'Tersalin';
+            } catch (error) {
+                if (copyFeedback) copyFeedback.textContent = 'Kode diskon: ' + discountCode;
+            }
+        });
+    }
+
+    updateTrialCountdown();
+    setInterval(updateTrialCountdown, 1000);
 </script>
 <script>
     const accordionItems = document.querySelectorAll('.accordion-item');
